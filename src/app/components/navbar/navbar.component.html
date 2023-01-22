@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="navbar__box-1">
+        <h2 class="navbar__title">
+            <a routerLink="/">
+                Todo List
+            </a>
+        </h2>
+        <div class="navbar__btn" (click)="toggleMenu()">
+            <img src="https://img.icons8.com/sf-black/50/fafafa/menu.png"/>
+        </div>
+    </div>
+
+    <ul class="navbar__box-2" [ngClass]="{ 'is-open' : isMenuOpen}">
+        <li class="navbar__link">
+            <a routerLink="/todo-list">List</a>
+        </li>
+        <li class="navbar__link">
+            <a routerLink="/todo-list/create">Create</a>
+        </li>
+    </ul>
+</nav>

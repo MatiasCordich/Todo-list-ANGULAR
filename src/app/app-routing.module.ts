@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TodoFormComponent } from './components/todo-form/todo-form.component';
-import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+
 
 // Este arreglo contiene todas lasa rutas que vamos a renderizar
 
 const routes: Routes = [
   {
     path:'',
-    component: TodoListComponent
+    component: ProductListComponent
   },
   {
     path: 'todo-list',
-    component: TodoListComponent
+    component: ProductListComponent
   },
   {
     path:'todo-list/create',
-    component: TodoFormComponent
+    component: ProductFormComponent
   },
   {
     path:'todo-list/edit/:id',
-    component: TodoFormComponent
+    component: ProductFormComponent
   }
 ];
 

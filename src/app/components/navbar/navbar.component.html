@@ -2,7 +2,7 @@
     <div class="navbar__box-1">
         <h2 class="navbar__title">
             <a routerLink="/">
-                Todo List
+                Product List
             </a>
         </h2>
         <div class="navbar__btn" (click)="toggleMenu()">
@@ -12,10 +12,10 @@
 
     <ul class="navbar__box-2" [ngClass]="{ 'is-open' : isMenuOpen}">
         <li class="navbar__link">
-            <a routerLink="/todo-list" >List</a>
+            <a routerLink="/product" >List</a>
         </li>
         <li class="navbar__link">
-            <a routerLink="/todo-list/create">Create</a>
+            <a routerLink="/product/create">Create</a>
         </li>
     </ul>
 </nav>

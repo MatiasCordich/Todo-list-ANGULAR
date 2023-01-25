@@ -1,1 +1,37 @@
-<p>product-form works!</p>
+<div class="product-form__box">
+    <form (submit)="edit ? updateProduct() : submitProduct()">
+        <div class="forms-box">
+            <label for="name">
+                <input 
+                    type="text" 
+                    name="name" 
+                    [(ngModel)]="product.name"
+                    placeholder="Product Name"
+                    >
+            </label>
+        </div>
+        <div class="forms-box">
+            <label for="description">
+                <input 
+                    type="text" 
+                    name="description" 
+                    [(ngModel)]="product.description"
+                    placeholder="Product Description"
+                    >
+            </label>
+        </div>
+        <div class="forms-box">
+            <label for="price">
+                <input 
+                    type="text" 
+                    name="price" 
+                    [(ngModel)]="product.price"
+                    placeholder="Product Price"
+                    >
+            </label>
+        </div>
+        <button type="submit">
+            Save
+        </button>
+    </form>
+</div>

@@ -1,1 +1,27 @@
-<p>todo-list works!</p>
+<main>  
+    <div *ngFor="let product of products">
+        <div class="card">
+            <ul>
+                <li>
+                    <p>
+                        id: {{product._id}}
+                    </p>
+                </li>
+                <li>
+                    name: {{product.name}}
+                </li>
+                <li>
+                    description: {{product.description}}
+                </li>
+                <li>
+                    price: {{product.price}}
+                </li>
+                <li>
+                    createdAt: {{product.createdAt}}
+                </li>
+            </ul>
+            <button (click)="deleteProduct(product._id!)">Delete</button>
+            <button [routerLink]="['/product/edit', product._id]">Edit</button> 
+        </div>
+    </div>
+</main>

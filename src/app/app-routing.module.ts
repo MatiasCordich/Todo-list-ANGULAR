@@ -12,15 +12,15 @@ const routes: Routes = [
     component: ProductListComponent
   },
   {
-    path: 'todo-list',
+    path: 'product',
     component: ProductListComponent
   },
   {
-    path:'todo-list/create',
+    path:'product/create',
     component: ProductFormComponent
   },
   {
-    path:'todo-list/edit/:id',
+    path:'product/edit/:id',
     component: ProductFormComponent
   }
 ];

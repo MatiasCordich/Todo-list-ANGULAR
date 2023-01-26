@@ -1,7 +1,8 @@
 <div class="product-form__box">
-    <form (submit)="edit ? updateProduct() : submitProduct()">
+    <form class="form" (submit)="edit ? updateProduct() : submitProduct()">
         <div class="forms-box">
             <label for="name">
+                Name
                 <input 
                     type="text" 
                     name="name" 
@@ -12,6 +13,7 @@
         </div>
         <div class="forms-box">
             <label for="description">
+                Description
                 <input 
                     type="text" 
                     name="description" 
@@ -22,6 +24,7 @@
         </div>
         <div class="forms-box">
             <label for="price">
+                Price
                 <input 
                     type="text" 
                     name="price" 
@@ -30,7 +33,7 @@
                     >
             </label>
         </div>
-        <button type="submit">
+        <button class="btn-submit" type="submit">
             Save
         </button>
     </form>

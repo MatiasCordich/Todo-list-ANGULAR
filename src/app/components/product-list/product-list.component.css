@@ -1,0 +1,60 @@
+.product-box{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #EEEEEE;
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card__btns{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn_card{
+    color: #fafafa;
+    border-radius: .6rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+}
+
+.delete{
+    background-color: #DA1212 ;
+}
+
+.edit{
+    background-color: #041562;
+}
+
+@media (min-width: 600px) {
+    .product-box{
+        flex-direction: row;
+    }
+
+    .product-main{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        gap: 2rem;
+    }
+}
+

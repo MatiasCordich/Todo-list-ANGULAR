@@ -1,27 +1,30 @@
-<main>  
-    <div *ngFor="let product of products">
+<main class="product-main">
+    <div class="product-box" *ngFor="let product of products">
         <div class="card">
-            <ul>
+            <ul class="card__info">
                 <li>
                     <p>
-                        id: {{product._id}}
+                        {{product._id}}
                     </p>
                 </li>
                 <li>
-                    name: {{product.name}}
+                    {{product.name}}
                 </li>
                 <li>
-                    description: {{product.description}}
+                    {{product.description}}
                 </li>
                 <li>
-                    price: {{product.price}}
-                </li>
-                <li>
-                    createdAt: {{product.createdAt}}
+                    $ {{product.price}}
                 </li>
             </ul>
-            <button (click)="deleteProduct(product._id!)">Delete</button>
-            <button [routerLink]="['/product/edit', product._id]">Edit</button> 
+            <div class="card__btns">
+                <button class="btn_card delete" (click)="deleteProduct(product._id!)">Delete
+                </button>
+                <button class="btn_card edit" [routerLink]="['/product/edit', product._id]">
+                    Edit
+                </button>
+            </div>
+
         </div>
     </div>
 </main>

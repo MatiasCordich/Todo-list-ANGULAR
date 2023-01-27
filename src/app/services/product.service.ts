@@ -11,7 +11,7 @@ import { Observable } from 'rxjs'
 })
 export class ProductService {
 
-  BASE_URL: string = 'https://nest-project-zeta.vercel.app'
+  BASE_URL: string = 'https://nest-api-cv2l.onrender.com'
 
   constructor(private http: HttpClient) { }
 
